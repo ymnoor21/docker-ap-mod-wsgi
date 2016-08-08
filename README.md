@@ -39,3 +39,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 17. deactivate
 ```
+Now point your browser to this: http://localhost:8000
