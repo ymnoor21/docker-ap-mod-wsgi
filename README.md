@@ -1,4 +1,9 @@
-Clone this git repo and run these commands when setting up the project for the first time
+Use docker pull command: `docker pull ymnoor21/ap-mod-wsgi`
+
+Clone git repo: `git clone https://github.com/ymnoor21/docker-ap-mod-wsgi.git`
+
+Run these commands when setting up the project for the first time
+
 ```bash
 1. docker build -t ymnoor21/ap-mod-wsgi:v1 -f Dockerfile .
 
