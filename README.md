@@ -26,11 +26,13 @@ And run these commands when setting up the project for the first time
 10. django-admin.py startproject myproject .
 
 11. pip3 freeze > requirements.txt
-
+```
 Add these following lines to `myproject/settings.py` file:
+
 - Replace database driver to `mysql`:
+
 ```python
-	'default': {
+   'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'databasename',
         'USER': 'dbuser',
@@ -39,7 +41,9 @@ Add these following lines to `myproject/settings.py` file:
         'PORT': '3306',
     }
 ```
+
 - Add static root:
+
 ```python
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 ```
@@ -50,18 +54,18 @@ import pymysql
 pymysql.install_as_MySQLdb()
 ```
 ```bash
-11. ./manage.py makemigrations
+12. ./manage.py makemigrations
 
-12. ./manage.py migrate
+13. ./manage.py migrate
 	
-13. ./manage.py createsuperuser
+14. ./manage.py createsuperuser
 	
-14. ./manage.py collectstatic
+15. ./manage.py collectstatic
 
-15. chown -R :www-data /var/www/site
+16. chown -R :www-data /var/www/site
 
-16. chmod -R 775 /var/www/site
+17. chmod -R 775 /var/www/site
 
-17. deactivate
+18. deactivate
 ```
 Now point your browser to this: http://localhost:8000
