@@ -7,7 +7,7 @@ And run these commands when setting up the project for the first time
 ```bash
 1. docker build -t ymnoor21/ap-mod-wsgi:v1 -f Dockerfile .
 
-2. docker create -v ~/Docker_boxes/django-1.10/site:/var/www/site --name django_data ubuntu:16.04 /bin/true
+2. docker create -v ~/Docker_boxes/apache2.4.18-mod_wsgi4.3.0-python3.5.2/site:/var/www/site --name django_data ubuntu:16.04 /bin/true
 
 3. docker run -d -it --name ap-mod-wsgi --volumes-from django_data -p 8000:80 ymnoor21/ap-mod-wsgi:v1 /bin/bash
 
