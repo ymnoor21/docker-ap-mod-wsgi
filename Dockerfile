@@ -9,6 +9,7 @@ RUN ln -s /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
 # install necessary python softwares
 RUN apt-get -y update
 RUN apt-get -y install apache2 python3-pip libapache2-mod-wsgi-py3 vim
+RUN apt-get -y install python3-dev libmysqlclient-dev
 
 # enable apache rewrite module
 RUN a2enmod rewrite

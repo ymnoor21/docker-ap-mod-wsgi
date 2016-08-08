@@ -25,9 +25,11 @@ And run these commands when setting up the project for the first time
 
 9. pip3 install pymysql
 
-10. django-admin.py startproject myproject .
+10. pip3 install mysqlclient
 
-11. pip3 freeze > requirements.txt
+11. django-admin.py startproject myproject .
+
+12. pip3 freeze > requirements.txt
 ```
 Add these following lines to `myproject/settings.py` file:
 
@@ -56,18 +58,18 @@ import pymysql
 pymysql.install_as_MySQLdb()
 ```
 ```bash
-12. ./manage.py makemigrations
+13. ./manage.py makemigrations
 
-13. ./manage.py migrate
+14. ./manage.py migrate
 	
-14. ./manage.py createsuperuser
+15. ./manage.py createsuperuser
 	
-15. ./manage.py collectstatic
+16. ./manage.py collectstatic
 
-16. chown -R :www-data /var/www/site
+17. chown -R :www-data /var/www/site
 
-17. chmod -R 775 /var/www/site
+18. chmod -R 775 /var/www/site
 
-18. deactivate
+19. deactivate
 ```
 Now point your browser to this: http://localhost:8000
