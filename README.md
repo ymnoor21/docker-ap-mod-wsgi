@@ -1,4 +1,4 @@
-Run these commands when setting up the project for the first time
+Clone this git repo and run these commands when setting up the project for the first time
 ```bash
 1. docker build -t ymnoor21/ap-mod-wsgi:v1 -f Dockerfile .
 
