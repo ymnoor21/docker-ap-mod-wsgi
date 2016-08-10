@@ -4,7 +4,7 @@ Use docker pull command: `docker pull ymnoor21/ap-mod-wsgi` to pull down the ima
 
 Use this command: `git clone https://github.com/ymnoor21/docker-ap-mod-wsgi.git` to clone the repo.
 
-And run these commands when setting up the project for the first time. Btw, you need to pull `ubuntu:16.04` and a `mysql` image (and have mysql container ready) from docker hub before you go through the following steps to install Apache with mod_wsgi.
+And run these commands when setting up the project for the first time. But before you start, you need to pull [`ubuntu:16.04`](https://hub.docker.com/_/ubuntu/) and a [`mysql`](https://github.com/ymnoor21/docker-mysql) image (and have a mysql container ready) from docker hub.
 
 ```bash
 1. docker build -t ymnoor21/ap-mod-wsgi:v1 -f Dockerfile .
